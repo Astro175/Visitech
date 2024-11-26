@@ -40,7 +40,7 @@ export function VisitechLandingComponent() {
       description:
         "Master both frontend and backend technologies to become a versatile web developer.",
       price: "220,000 NGN",
-      duration: "4 months",
+      duration: "4 months + 1 month mentorship",
       features: [
         "Learn HTML, CSS, JavaScript",
         "Master React and Node.js",
@@ -54,7 +54,7 @@ export function VisitechLandingComponent() {
       description:
         "Create powerful mobile applications for iOS and Android platforms.",
       price: "250,000 NGN",
-      duration: "5 months",
+      duration: "5 months + 1 month mentorship",
       features: [
         "Develop for iOS and Android",
         "Learn React Native or Flutter",
@@ -68,7 +68,7 @@ export function VisitechLandingComponent() {
       description:
         "Master the art of social media to grow brands and engage audiences.",
       price: "70,000 NGN",
-      duration: "1 month",
+      duration: "1 month + 1 month mentorship",
       features: [
         "Create effective social strategies",
         "Content creation for various platforms",
@@ -82,7 +82,7 @@ export function VisitechLandingComponent() {
       description:
         "Build professional websites quickly with WordPress and popular plugins.",
       price: "50,000 NGN",
-      duration: "1 month",
+      duration: "1 month + 1 month mentorship",
       features: [
         "WordPress theme development",
         "Plugin customization",
@@ -96,7 +96,7 @@ export function VisitechLandingComponent() {
       description:
         "Learn to analyze and interpret complex data to drive business decisions.",
       price: "150,000 NGN",
-      duration: "2 months",
+      duration: "2 months + 1 month mentorship",
       features: [
         "Master data analysis tools",
         "Statistical analysis techniques",
@@ -110,7 +110,7 @@ export function VisitechLandingComponent() {
       description:
         "Create beautiful, user-friendly interfaces that delight and engage users.",
       price: "100,000 NGN",
-      duration: "3 months",
+      duration: "3 months + 1 month mentorship",
       features: [
         "User research and personas",
         "Wireframing and prototyping",
@@ -339,7 +339,7 @@ export function VisitechLandingComponent() {
               <div className="w-full max-w-sm space-y-2">
                 <Button className="w-full" variant="secondary" asChild>
                   <Link
-                    href="https://wa.me/+23463966829"
+                    href="https://wa.me/+2348163966829"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
