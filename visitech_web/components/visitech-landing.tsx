@@ -197,7 +197,7 @@ export function VisitechLandingComponent() {
                 )}
                 <p className="mx-auto max-w-[700px] text-lg md:text-xl">
                   Master the latest tech skills, become employable, and
-                  transform your career. We're interested in your story and
+                  transform your career. We&apos;re interested in your story and
                   committed to changing it.
                 </p>
               </div>
@@ -279,7 +279,7 @@ export function VisitechLandingComponent() {
                   Why Choose Visitech?
                 </h2>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  At Visitech, we're committed to providing top-notch tech
+                  At Visitech, we&apos;re committed to providing top-notch tech
                   education that prepares you for the real world and changes
                   your story.
                 </p>
