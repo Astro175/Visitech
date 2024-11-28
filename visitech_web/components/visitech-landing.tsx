@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Image from "next/image";
 import {
   Card,
   CardContent,
@@ -24,98 +25,213 @@ import {
   Smartphone,
   BarChart,
 } from "lucide-react";
-import Image from "next/image";
 
-export function VisitechLandingComponent() {
+export default function VisitechLandingComponent() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  const courses = [
+  const learningPaths = [
     {
-      title: "Full Stack Web Development",
+      title: "Web Development",
       icon: <Code className="w-8 h-8 mb-2" />,
-      description:
-        "Master both frontend and backend technologies to become a versatile web developer.",
-      price: "220,000 NGN",
-      duration: "4 months + 1 month mentorship",
-      features: [
-        "Learn HTML, CSS, JavaScript",
-        "Master React and Node.js",
-        "Build full-stack applications",
-        "Deploy and manage web apps",
+      levels: [
+        {
+          title: "Beginner",
+          description:
+            "Embark on your journey to become a career-ready developer",
+          price: "100,000 NGN",
+          duration: "3 months",
+          features: [
+            "CSS foundations",
+            "Introduction to JavaScript",
+            "Git basics",
+            "Web accessibility",
+            "SEO fundamentals",
+            "Intro to Dev tools",
+          ],
+        },
+        {
+          title: "Professional",
+          description: "Elevate your skills to become a mid-level developer",
+          price: "200,000 NGN",
+          duration: "3 months",
+          features: [
+            "Advanced JavaScript concepts",
+            "React framework",
+            "Web performance optimization",
+            "Advanced CSS techniques",
+            "Website deployment strategies",
+            "TypeScript essentials",
+            "Functional JavaScript programming",
+          ],
+          examRequirement: "Examination required",
+        },
+        {
+          title: "Backend to Fullstack",
+          description:
+            "Master server-side technologies and become a full stack developer",
+          price: "250,000 NGN",
+          duration: "3 months",
+          features: [
+            "Server setup and management",
+            "API development",
+            "Database fundamentals",
+            "Linux and command line basics",
+            "Vim essentials",
+            "Node.js fundamentals",
+            "SQL and PostgreSQL introduction",
+          ],
+          examRequirement: "Examination required",
+        },
       ],
     },
     {
-      title: "App Development",
-      icon: <Smartphone className="w-8 h-8 mb-2" />,
-      description:
-        "Create powerful mobile applications for iOS and Android platforms.",
-      price: "250,000 NGN",
-      duration: "5 months + 1 month mentorship",
-      features: [
-        "Develop for iOS and Android",
-        "Learn React Native or Flutter",
-        "Implement native device features",
-        "Publish apps to app stores",
-      ],
-    },
-    {
-      title: "Social Media Management and Marketing",
+      title: "Social Media Marketing",
       icon: <MessageSquare className="w-8 h-8 mb-2" />,
-      description:
-        "Master the art of social media to grow brands and engage audiences.",
-      price: "70,000 NGN",
-      duration: "1 month + 1 month mentorship",
-      features: [
-        "Create effective social strategies",
-        "Content creation for various platforms",
-        "Social media analytics and reporting",
-        "Paid social advertising campaigns",
-      ],
-    },
-    {
-      title: "WordPress Web Development",
-      icon: <Globe className="w-8 h-8 mb-2" />,
-      description:
-        "Build professional websites quickly with WordPress and popular plugins.",
-      price: "50,000 NGN",
-      duration: "1 month + 1 month mentorship",
-      features: [
-        "WordPress theme development",
-        "Plugin customization",
-        "E-commerce with WooCommerce",
-        "SEO optimization for WordPress",
-      ],
-    },
-    {
-      title: "Data Analytics",
-      icon: <BarChart className="w-8 h-8 mb-2" />,
-      description:
-        "Learn to analyze and interpret complex data to drive business decisions.",
-      price: "150,000 NGN",
-      duration: "2 months + 1 month mentorship",
-      features: [
-        "Master data analysis tools",
-        "Statistical analysis techniques",
-        "Data visualization",
-        "Machine learning basics",
+      levels: [
+        {
+          title: "Basic",
+          description:
+            "Learn to enhance your business's online presence and profitability",
+          price: "25,990 NGN",
+          duration: "1 month",
+          features: [
+            "Social media platform basics",
+            "Content creation strategies",
+            "Audience engagement techniques",
+            "Basic analytics interpretation",
+            "Brand visibility tactics",
+          ],
+        },
+        {
+          title: "Professional",
+          description:
+            "Become an expert in Social Media Marketing and help businesses thrive online",
+          price: "49,500 NGN",
+          duration: "2 months",
+          features: [
+            "Advanced marketing strategies",
+            "Data-driven campaign management",
+            "Influencer collaboration techniques",
+            "Social media advertising mastery",
+            "ROI measurement and optimization",
+          ],
+          examRequirement: "Examination required",
+        },
       ],
     },
     {
       title: "UI/UX Design",
       icon: <Palette className="w-8 h-8 mb-2" />,
-      description:
-        "Create beautiful, user-friendly interfaces that delight and engage users.",
-      price: "100,000 NGN",
-      duration: "3 months + 1 month mentorship",
-      features: [
-        "User research and personas",
-        "Wireframing and prototyping",
-        "Visual design principles",
-        "Usability testing",
+      levels: [
+        {
+          title: "Beginner",
+          description:
+            "Start your journey in creating user-friendly and visually appealing interfaces",
+          price: "100,000 NGN",
+          duration: "3 months",
+          features: [
+            "Design thinking principles",
+            "User research basics",
+            "Wireframing and prototyping",
+            "Visual design fundamentals",
+            "Usability testing introduction",
+          ],
+        },
+        {
+          title: "Advanced",
+          description:
+            "Elevate your design skills to create exceptional user experiences",
+          price: "150,000 NGN",
+          duration: "3 months",
+          features: [
+            "Advanced interaction design",
+            "Design systems creation",
+            "User psychology in design",
+            "Accessibility and inclusive design",
+            "UX writing and content strategy",
+          ],
+          examRequirement: "Examination required",
+        },
+      ],
+    },
+    {
+      title: "WordPress Development",
+      icon: <Globe className="w-8 h-8 mb-2" />,
+      levels: [
+        {
+          title: "Beginner",
+          description:
+            "Learn to create and manage professional WordPress websites",
+          price: "50,000 NGN",
+          duration: "1 month",
+          features: [
+            "WordPress installation and setup",
+            "Theme customization",
+            "Plugin management",
+            "Content management",
+            "Basic SEO for WordPress",
+          ],
+        },
+        {
+          title: "WooCommerce Specialist",
+          description:
+            "Master e-commerce development with WordPress and WooCommerce",
+          price: "120,000 NGN",
+          duration: "2 months",
+          features: [
+            "WooCommerce setup and configuration",
+            "Payment gateway integration",
+            "Custom product types",
+            "Order management systems",
+            "E-commerce SEO strategies",
+          ],
+          examRequirement:
+            "Examination required to progress from Beginner level",
+        },
+      ],
+    },
+    {
+      title: "App Development",
+      icon: <Smartphone className="w-8 h-8 mb-2" />,
+      levels: [
+        {
+          title: "Mobile App Development",
+          description:
+            "Create powerful mobile applications for iOS and Android platforms",
+          price: "250,000 NGN",
+          duration: "5 months",
+          features: [
+            "Cross-platform development fundamentals",
+            "UI/UX for mobile apps",
+            "API integration",
+            "App performance optimization",
+            "Publishing to app stores",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Data Analytics",
+      icon: <BarChart className="w-8 h-8 mb-2" />,
+      levels: [
+        {
+          title: "Data Analytics Fundamentals",
+          description:
+            "Learn to analyze and interpret complex data to drive business decisions",
+          price: "150,000 NGN",
+          duration: "2 months",
+          features: [
+            "Data collection and cleaning",
+            "Statistical analysis techniques",
+            "Data visualization tools",
+            "Predictive modeling basics",
+            "Business intelligence reporting",
+          ],
+        },
       ],
     },
   ];
@@ -150,7 +266,7 @@ export function VisitechLandingComponent() {
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
       <header className="flex items-center px-4 border-b lg:px-6 h-14">
-        <Link className="flex items-center justify-center" href="#">
+        <Link href="#" className="flex items-center justify-center">
           <Image
             src="/VISITECH LOGO_051959.png"
             alt="Visitech Logo"
@@ -160,24 +276,24 @@ export function VisitechLandingComponent() {
           />
         </Link>
         <nav className="flex gap-4 ml-auto sm:gap-6">
-          <Link
+          <a
             className="text-sm font-medium hover:underline underline-offset-4"
             href="#courses"
           >
             Courses
-          </Link>
-          <Link
+          </a>
+          <a
             className="text-sm font-medium hover:underline underline-offset-4"
             href="#about"
           >
             About
-          </Link>
-          <Link
+          </a>
+          <a
             className="text-sm font-medium hover:underline underline-offset-4"
             href="#contact"
           >
             Contact
-          </Link>
+          </a>
         </nav>
       </header>
       <main className="flex-1">
@@ -203,7 +319,7 @@ export function VisitechLandingComponent() {
               </div>
               <div className="space-x-4">
                 <Button asChild variant="secondary">
-                  <Link href="#courses">Explore Courses</Link>
+                  <a href="#courses">Explore Learning Paths</a>
                 </Button>
               </div>
             </div>
@@ -219,49 +335,63 @@ export function VisitechLandingComponent() {
         >
           <div className="container px-4 mx-auto md:px-6">
             <h2 className="mb-12 text-3xl font-bold tracking-tighter text-center sm:text-5xl">
-              Our Cutting-Edge Courses
+              Our Learning Paths
             </h2>
             <p className="mb-8 text-lg text-center">
               Flexible payment options available - pay in installments!
             </p>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {courses.map((course, index) => (
-                <motion.div key={index} variants={cardVariants}>
-                  <Card className="h-full transition-all duration-300 hover:shadow-lg hover:border-[#4169E1]">
-                    <CardHeader>
-                      <div className="flex justify-center">{course.icon}</div>
-                      <CardTitle>{course.title}</CardTitle>
-                      <CardDescription>{course.description}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="mb-2 text-lg font-bold">{course.price}</p>
-                      <p className="mb-4 text-sm text-muted-foreground">
-                        {course.duration}
-                      </p>
-                      <ul className="space-y-2">
-                        {course.features.map((feature, fIndex) => (
-                          <li key={fIndex} className="flex items-center">
-                            <ArrowRight className="w-4 h-4 mr-2" />
-                            <span className="text-sm">{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </CardContent>
-                    <CardFooter>
-                      <Button className="w-full" asChild>
-                        <Link
-                          href="https://wa.me/+2348163966829"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Book a session with our expert
-                        </Link>
-                      </Button>
-                    </CardFooter>
-                  </Card>
-                </motion.div>
-              ))}
-            </div>
+            {learningPaths.map((path, pathIndex) => (
+              <div key={pathIndex} className="mb-12">
+                <div className="flex items-center justify-center p-4 mb-6 text-2xl font-bold bg-primary text-primary-foreground rounded-lg">
+                  {path.icon}
+                  <span className="ml-2">{path.title}</span>
+                </div>
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {path.levels.map((level, levelIndex) => (
+                    <motion.div key={levelIndex} variants={cardVariants}>
+                      <Card className="h-full transition-all duration-300 hover:shadow-lg hover:border-[#4169E1]">
+                        <CardHeader>
+                          <CardTitle>{level.title}</CardTitle>
+                          <CardDescription>{level.description}</CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <p className="mb-2 text-lg font-bold">
+                            {level.price}
+                          </p>
+                          <p className="mb-4 text-sm text-muted-foreground">
+                            {level.duration}
+                          </p>
+                          <ul className="space-y-2">
+                            {level.features.map((feature, fIndex) => (
+                              <li key={fIndex} className="flex items-center">
+                                <ArrowRight className="w-4 h-4 mr-2" />
+                                <span className="text-sm">{feature}</span>
+                              </li>
+                            ))}
+                          </ul>
+                          {level.examRequirement && (
+                            <p className="mt-4 text-sm font-semibold text-muted-foreground">
+                              {level.examRequirement}
+                            </p>
+                          )}
+                        </CardContent>
+                        <CardFooter>
+                          <Button className="w-full" asChild>
+                            <a
+                              href="https://wa.me/+2348163966829"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Book a session with our expert
+                            </a>
+                          </Button>
+                        </CardFooter>
+                      </Card>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </motion.section>
         <motion.section
@@ -338,13 +468,13 @@ export function VisitechLandingComponent() {
               </div>
               <div className="w-full max-w-sm space-y-2">
                 <Button className="w-full" variant="secondary" asChild>
-                  <Link
+                  <a
                     href="https://wa.me/+2348163966829"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Chat with an Expert on WhatsApp
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>
@@ -356,12 +486,12 @@ export function VisitechLandingComponent() {
           © 2024 Visitech. All rights reserved.
         </p>
         <nav className="flex gap-4 sm:ml-auto sm:gap-6">
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
+          <a className="text-xs hover:underline underline-offset-4" href="#">
             Terms of Service
-          </Link>
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
+          </a>
+          <a className="text-xs hover:underline underline-offset-4" href="#">
             Privacy
-          </Link>
+          </a>
         </nav>
       </footer>
     </div>
