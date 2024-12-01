@@ -42,7 +42,7 @@ export default function VisitechLandingComponent() {
           title: "Beginner",
           description:
             "Embark on your journey to become a career-ready developer",
-          duration: "3 months",
+          duration: "2 months + 1 month mentorship",
           features: [
             "CSS foundations",
             "Introduction to JavaScript",
@@ -94,7 +94,7 @@ export default function VisitechLandingComponent() {
           title: "Basic",
           description:
             "Learn to enhance your business's online presence and profitability",
-          duration: "1 month",
+          duration: "1 month + 1 mont mentorship",
           features: [
             "Social media platform basics",
             "Content creation strategies",
@@ -127,7 +127,7 @@ export default function VisitechLandingComponent() {
           title: "Beginner",
           description:
             "Start your journey in creating user-friendly and visually appealing interfaces",
-          duration: "3 months",
+          duration: "2 months + 1 month mentorship",
           features: [
             "Design thinking principles",
             "User research basics",
@@ -160,7 +160,7 @@ export default function VisitechLandingComponent() {
           title: "Beginner",
           description:
             "Learn to create and manage professional WordPress websites",
-          duration: "1 month",
+          duration: "1 month + 1 month mentorship",
           features: [
             "WordPress installation and setup",
             "Theme customization",
@@ -194,7 +194,7 @@ export default function VisitechLandingComponent() {
           title: "Mobile App Development",
           description:
             "Create powerful mobile applications for iOS and Android platforms",
-          duration: "5 months",
+          duration: "4 months + 1 month mentorship",
           features: [
             "Cross-platform development fundamentals",
             "UI/UX for mobile apps",
