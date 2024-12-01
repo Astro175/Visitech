@@ -42,7 +42,6 @@ export default function VisitechLandingComponent() {
           title: "Beginner",
           description:
             "Embark on your journey to become a career-ready developer",
-          price: "100,000 NGN",
           duration: "3 months",
           features: [
             "CSS foundations",
@@ -57,7 +56,6 @@ export default function VisitechLandingComponent() {
         {
           title: "Professional",
           description: "Elevate your skills to become a mid-level developer",
-          price: "150,000 NGN",
           duration: "3 months",
           features: [
             "Advanced JavaScript concepts",
@@ -74,7 +72,6 @@ export default function VisitechLandingComponent() {
           title: "Backend to Fullstack",
           description:
             "Master server-side technologies and become a full stack developer",
-          price: "250,000 NGN",
           duration: "3 months",
           features: [
             "Server setup and management",
@@ -97,7 +94,6 @@ export default function VisitechLandingComponent() {
           title: "Basic",
           description:
             "Learn to enhance your business's online presence and profitability",
-          price: "25,990 NGN",
           duration: "1 month",
           features: [
             "Social media platform basics",
@@ -111,7 +107,6 @@ export default function VisitechLandingComponent() {
           title: "Professional",
           description:
             "Become an expert in Social Media Marketing and help businesses thrive online",
-          price: "49,500 NGN",
           duration: "2 months",
           features: [
             "Advanced marketing strategies",
@@ -132,7 +127,6 @@ export default function VisitechLandingComponent() {
           title: "Beginner",
           description:
             "Start your journey in creating user-friendly and visually appealing interfaces",
-          price: "100,000 NGN",
           duration: "3 months",
           features: [
             "Design thinking principles",
@@ -146,7 +140,6 @@ export default function VisitechLandingComponent() {
           title: "Advanced",
           description:
             "Elevate your design skills to create exceptional user experiences",
-          price: "150,000 NGN",
           duration: "3 months",
           features: [
             "Advanced interaction design",
@@ -167,7 +160,6 @@ export default function VisitechLandingComponent() {
           title: "Beginner",
           description:
             "Learn to create and manage professional WordPress websites",
-          price: "50,000 NGN",
           duration: "1 month",
           features: [
             "WordPress installation and setup",
@@ -181,7 +173,6 @@ export default function VisitechLandingComponent() {
           title: "WooCommerce Specialist",
           description:
             "Master e-commerce development with WordPress and WooCommerce",
-          price: "120,000 NGN",
           duration: "2 months",
           features: [
             "WooCommerce setup and configuration",
@@ -203,7 +194,6 @@ export default function VisitechLandingComponent() {
           title: "Mobile App Development",
           description:
             "Create powerful mobile applications for iOS and Android platforms",
-          price: "250,000 NGN",
           duration: "5 months",
           features: [
             "Cross-platform development fundamentals",
@@ -223,7 +213,6 @@ export default function VisitechLandingComponent() {
           title: "Data Analytics Fundamentals",
           description:
             "Learn to analyze and interpret complex data to drive business decisions",
-          price: "150,000 NGN",
           duration: "2 months",
           features: [
             "Data collection and cleaning",
@@ -356,9 +345,6 @@ export default function VisitechLandingComponent() {
                           <CardDescription>{level.description}</CardDescription>
                         </CardHeader>
                         <CardContent>
-                          <p className="mb-2 text-lg font-bold">
-                            {level.price}
-                          </p>
                           <p className="mb-4 text-sm text-muted-foreground">
                             {level.duration}
                           </p>
